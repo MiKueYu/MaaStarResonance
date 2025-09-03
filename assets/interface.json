@@ -19,13 +19,6 @@
             "path": [
                 "{PROJECT_DIR}/resource"
             ]
-        },
-        {
-            "name": "B 服",
-            "path": [
-                "{PROJECT_DIR}/resource",
-                "{PROJECT_DIR}/resource_bilibili"
-            ]
         }
     ],
     "agent_demo": {
@@ -36,49 +29,8 @@
     },
     "task": [
         {
-            "name": "普通任务",
-            "entry": "MyTask1"
-        },
-        {
-            "name": "选项任务",
-            "entry": "MyTask2",
-            "option": [
-                "任务选项1"
-            ]
-        },
-        {
-            "name": "参数任务",
-            "entry": "MyTask3",
-            "option": [
-                "任务选项1"
-            ],
-            "pipeline_override": {}
-        },
-        {
-            "name": "带Custom的任务",
-            "entry": "MyTask4"
+            "name": "通用采集",
+            "entry": "通用采集"
         }
-    ],
-    "option": {
-        "任务选项1": {
-            "cases": [
-                {
-                    "name": "文本1",
-                    "pipeline_override": {
-                        "OcrTask": {
-                            "text": "文本1"
-                        }
-                    }
-                },
-                {
-                    "name": "文本2",
-                    "pipeline_override": {
-                        "OcrTask": {
-                            "text": "文本2"
-                        }
-                    }
-                }
-            ]
-        }
-    }
+    ]
 }
